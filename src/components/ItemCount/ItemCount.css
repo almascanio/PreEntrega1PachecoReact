@@ -1,0 +1,8 @@
+.itemCount{
+    width: fit-content;
+    background-color: rgb(53, 161, 255);
+    margin: auto;
+    padding: 16px;
+    text-align: center;
+    border-radius: 20px;
+}
