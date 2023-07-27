@@ -1,4 +1,4 @@
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
 import { productsMueble } from "../lib/products.requests";
 import {ItemCount} from "../components/ItemCount/ItemCount"
 
@@ -7,22 +7,23 @@ export const Detail = () => {
 
     useEffect(() => {
         productsMueble().then((res) => {
-            setWood(res);
+            setWood(res); 
         })
 }, []);
 
 return (
-    <div>
-        <div>
+    <div className="container-detail">
+        <div className="container-detail-todo">
             <div>
-                <img src={wood.img}/>
+                <img className="img-detail" src={wood.img}/>
             </div>
             <div>
-                <span>{wood.title}</span>
-                <p>{wood.descrip}</p>
-                <span>${wood.price}</span>
-                <span> "Quedan pocas unidades" {wood.stock}</span>
-                <ItemCount stock={wood.stock} onAdd={() => alert("Ya lograste comprar")}/>
+                <span className="container-title-di">{wood.title}</span>
+                <p className="container-parrafo-di">{wood.description}</p>
+                <span className="container-price-di">${wood.price}</span>
+                <br />
+                <span className="container-mensaje"> Quedan solo  {wood.stock} unidades</span>
+                <ItemCount initial={1} stock={wood.stock} onAdd={() => alert("Se realizo la compra con exito")}/>
             </div>
         </div>
     </div>

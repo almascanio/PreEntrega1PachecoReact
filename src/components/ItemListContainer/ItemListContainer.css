@@ -1,8 +1,8 @@
-.mensaje{
-    font-size: 50px;
-    font-weight: 600;
+.item-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 400px;
+    gap: 200px;
+    padding: 40px;
     text-align: center;
-    padding: 10px;
-    margin: 10px;
-    color: #ffffff;
 }

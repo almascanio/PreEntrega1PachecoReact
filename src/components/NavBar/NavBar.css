@@ -6,8 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #ffffff;
-    box-shadow: 0px 30px 15px -30px #ffffff;
+    color: #000000;
+    box-shadow: 0px 30px 15px -30px #000000;
 }
 
 .nav_li{
@@ -19,11 +19,11 @@
     text-decoration: none;
     padding: 20px;
     margin-bottom: 10px;
-    color: #ffffff;
+    color: #000000;
 }
 
 .nav_link:hover{
-    color: rgb(245, 255, 109);
+    color: rgb(53, 34, 11);
 }
 
 .cart{

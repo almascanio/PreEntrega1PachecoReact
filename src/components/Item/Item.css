@@ -1,0 +1,31 @@
+.container-card{
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(250, 255, 255);
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.container-info, .container-vm{
+    margin-top: 10px;
+}
+
+.container-title{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.container-btn{
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}

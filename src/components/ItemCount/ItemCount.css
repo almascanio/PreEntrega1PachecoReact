@@ -1,8 +1,16 @@
-.itemCount{
+.item-count{
     width: fit-content;
-    background-color: rgb(53, 161, 255);
+    background-color: #deb887;
     margin: auto;
     padding: 16px;
     text-align: center;
     border-radius: 20px;
+}
+
+.item-count-btn{
+    background-color: #ffdcaf;
+    margin: 2px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bolder;
 }

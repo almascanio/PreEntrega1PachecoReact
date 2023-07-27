@@ -9,7 +9,7 @@ export const ItemListContainer = ({ products }) => {
 };
 
 return (
-    <div className="mensaje">
+    <div className="item-list">
         {products.map((product) => (
         <Item
             key={product.id}
@@ -18,7 +18,6 @@ return (
             img={product.img}
         />
         ))}
-        <ItemCount initial={1} stock={15} onAdd={onAdd} />
     </div>
     );
 };

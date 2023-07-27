@@ -4,18 +4,23 @@ export const Item = ({
 
     title, 
     price, 
-    img
+    img,
     
 }) => {
 
     return(
-        <div>
-            <div>
-                <img src={img} />
+        <div className="container-card">
+            <div className="container-img">
+                <img className="img" src={img} />
             </div>
-            <div>
-                <span>{title}</span>
-                <span>${price}</span>
+            <div className="container-info">
+                <span className="container-title">{title}</span>
+                <br />
+               {/*  <p className="container-description">{description}</p> */}
+                <span className="container-price">${price}</span>
+            </div>
+            <div className="container-vm">
+                <button className="container-btn">Ver mas</button>
             </div>
         </div>
     )

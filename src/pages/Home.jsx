@@ -12,9 +12,9 @@ export const Home = () => {
 }, []);
 
 return(
-    <div>
-        <p>LO NUEVO EN ¡A TODO MADERA!</p>
-        <div className="container">
+    <div className="container-home">
+        <p className="container-p">LO NUEVO EN ¡A TODO MADERA!</p>
+        <div className="container-produc">
             <ItemListContainer products={products}/>
         </div>
     </div>
