@@ -10,29 +10,13 @@ export const NavBar = () => {
                 fontWeight: "bolder",
             }}>A todo madera</h1>
             <nav>
-                <ul style={{
-                    listStyle: "none",
-                    fontSize: 20
-                }}>
-                    <li className="nav_li">
-                        <a className="nav_link "href="">Escritorios</a>
-                      {/*   <NavLink>Escritorios</NavLink> */}
-                    </li>
-                    <li className="nav_li">
-                        <a className="nav_link "href="">Sillas</a>
-                    </li>
-                    <li className="nav_li">
-                        <a className="nav_link "href="">Placars</a>
-                    </li>
-                    <li className="nav_li">
-                        <a className="nav_cart "href="">
-                            <CardWidget/>
-                        </a>
-                    </li>
-                </ul>
+                <NavLink to={"/category/escritorios"}>Escritorios</NavLink>
+                <NavLink to={"/category/sillas"}>Sillas</NavLink>
+                <NavLink to={"/category/placars"}>Placars</NavLink>
             </nav>
+            < CardWidget/>
         </header>
-        {/* < Outlet /> */}
+        < Outlet />
         {/* < Footer /> */}
         </>
     );
