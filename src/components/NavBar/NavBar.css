@@ -10,23 +10,8 @@
     box-shadow: 0px 30px 15px -30px #000000;
 }
 
-.nav_li{
-    display: inline-block;
-}
-
-.nav_link, .nav_cart{
-    display: inline-block;
-    text-decoration: none;
-    padding: 20px;
-    margin-bottom: 10px;
-    color: #000000;
-}
-
-.nav_link:hover{
-    color: rgb(53, 34, 11);
-}
-
-.cart{
+.nav_items{
     display: flex;
-    color: rgb(0, 0, 0);
+    gap: 50px;
+    font-size: 18px;
 }

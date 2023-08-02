@@ -13,6 +13,7 @@ return (
         {products.map((product) => (
         <Item
             key={product.id}
+            id={product.id}
             title={product.title}
             price={product.price}
             img={product.img}

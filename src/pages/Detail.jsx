@@ -1,15 +1,19 @@
 import {useEffect, useState} from "react";
 import { productsMueble } from "../lib/products.requests";
 import {ItemCount} from "../components/ItemCount/ItemCount"
+import { useParams } from "react-router-dom";
 
 export const Detail = () => {
+    const {id} = useParams();
     const [ wood, setWood ] = useState({});
 
     useEffect(() => {
-        productsMueble().then((res) => {
+        productsMueble(+id).then((res) => {
             setWood(res); 
         })
 }, []);
+
+if(!Object.keys(wood).length) return
 
 return (
     <div className="container-detail">

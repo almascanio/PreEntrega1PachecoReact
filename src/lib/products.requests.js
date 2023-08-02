@@ -1,4 +1,4 @@
-const wood = [
+const WOOD = [
     { 
         id: 1, 
         title: "Mueble 1", 
@@ -31,15 +31,16 @@ const wood = [
 export const productsMuebles = () => {
     return new Promise ((res) => {
         setTimeout(() => {
-            res(wood)
+            res(WOOD)
         }, 2000)
     });
 };
 
-export const productsMueble = () => {
+export const productsMueble = (id) => {
+    const wood = WOOD.filter((wood) => wood.id === id)[0];
     return new Promise ((res) => {
         setTimeout(() => {
-            res(wood[0])
+            res(wood)
         }, 1000)
     });
 };
