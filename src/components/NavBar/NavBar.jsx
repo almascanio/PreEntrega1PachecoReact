@@ -6,16 +6,21 @@ export const NavBar = () => {
     return ( <>
         <header className="container">
             <NavLink to="/"> 
-            <h1 style={{
-                fontSize: 30,
-                fontWeight: "bolder",
-            }}>A todo madera</h1>
+                <h1 style={{
+                    fontSize: 30,
+                    color: "#261D19",
+                    textDecoration: "none",
+                    fontWeight: "bolder"
+                }}>A TODO MADERA</h1>
             </NavLink>
             <nav className="nav_items">
                 <NavLink 
                     to={"/category/escritorios"}
                     style={({ isActive}) => ({
-                        color: isActive ? "red" : "yellow", /* Colocar codigos de color aca  */
+                        color: isActive ? "#8C5C4A" : "#261D19",
+                        fontWeight: "bolder", 
+                        textDecoration: "none",
+                        fontSize: 22
                     })}
                 >
                     Escritorios
@@ -23,7 +28,10 @@ export const NavBar = () => {
                 <NavLink 
                     to={"/category/sillas"}
                     style={({ isActive}) => ({
-                        color: isActive ? "red" : "yellow",
+                        color: isActive ? "#8C5C4A" : "#261D19",
+                        fontWeight: "bolder", 
+                        textDecoration: "none",
+                        fontSize: 22
                     })}
                 >
                     Sillas
@@ -31,7 +39,10 @@ export const NavBar = () => {
                 <NavLink 
                     to={"/category/placars"}
                     style={({ isActive}) => ({
-                        color: isActive ? "red" : "yellow",
+                        color: isActive ? "#8C5C4A" : "#261D19",
+                        fontWeight: "bolder", 
+                        textDecoration: "none",
+                        fontSize: 22
                     })}
                 >
                     Placars

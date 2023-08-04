@@ -28,11 +28,12 @@ const WOOD = [
     },
 ];
 
-export const productsMuebles = () => {
+export const productsMuebles = (id) => {
+    const cWood = id ? WOOD.filter((wood) => wood.category.toLowerCase() === id) : WOOD;
     return new Promise ((res) => {
         setTimeout(() => {
-            res(WOOD)
-        }, 2000)
+            res(cWood);
+        }, 2000);
     });
 };
 
@@ -40,7 +41,7 @@ export const productsMueble = (id) => {
     const wood = WOOD.filter((wood) => wood.id === id)[0];
     return new Promise ((res) => {
         setTimeout(() => {
-            res(wood)
-        }, 1000)
+            res(wood);
+        }, 1000);
     });
 };
