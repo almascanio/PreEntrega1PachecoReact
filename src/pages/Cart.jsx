@@ -1,7 +1,7 @@
 import React, { useState } from "react";  
-import { useCartContext, updateManyWood } from "../state/Cart.context";
+import { useCartContext} from "../state/Cart.context";
 import { addOrder } from "../lib/orders.requests";
-
+import { updateManyWood } from "../lib/products.requests";
 
 export const Cart = () => {
   const [name, setName] = useState("");
