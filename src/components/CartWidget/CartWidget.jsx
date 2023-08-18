@@ -9,7 +9,8 @@ export const CardWidget = () => {
         <div onClick={() => nav("/cart")}>
             <BsCartFill style={{
                 fontSize: 30,
-                color: "#261D19"
+                color: "#261D19",
+                cursor: "pointer"
             }}/> {cartCantidad ? <span>({cartCantidad})</span> : null }
         </div>
     );

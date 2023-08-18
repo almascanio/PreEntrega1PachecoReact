@@ -2,12 +2,10 @@ import { useNavigate } from "react-router-dom"
 import "./Item.css"
 
 export const Item = ({
-
     title, 
     price, 
     id,
     img,
-    
 }) => {
     const navigate = useNavigate();
     return(
@@ -18,7 +16,7 @@ export const Item = ({
             <div className="itemCard">
                 <span className="itemTitle">{title}</span>
                 <br />
-                <span className="itemPrice">${price}</span>
+                <span className="itemPrice"></span>
                 $
                 {price.toLocaleString("es-AR", {
                     minimumFractionDigits: 2,

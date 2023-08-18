@@ -1,4 +1,4 @@
-import { collection, getDocs, where, getDoc, query, doc, addDoc } from "firebase/firestore";
+import { collection, getDocs, where, getDoc, query, doc, writeBatch, increment} from "firebase/firestore";
 import { al } from "./config";
 
 const woodReferencia = collection(al, "items");
@@ -26,4 +26,17 @@ export const productsMueble = async (id) => {
 
     return null; 
 };
+
+// Actualizacion 
+
+export const updateManyWood = async ( items ) => {
+    const batch = writeBatch(al);
+    
+    items.forEach(({id, cantidad})=>{ 
+        batch.update(doc(al, "items", id), {
+        stock: increment(-cantidad)
+})
+})
+    batch.commit();
+}
 

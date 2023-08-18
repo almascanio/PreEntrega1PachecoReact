@@ -196,16 +196,24 @@ body {
   color: #261D19;
 }
 
-.cartItemDelete {
+.cartDeleteProduct {
   position: absolute;
+  background-color: #59362E;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  width: 110px;
+  border-radius: 10px;
+  transition: background-color 0.2s;
+  border: none;
+  cursor: pointer;
   right: 10px;
-  top: 10px;
-  background: #2a2a2a;
-  opacity: 0;
-  border-radius: 50%;
-  transition: 0.3s;
-  pointer-events: none;
-  opacity: 0.6;
+  top: 8px;
+}
+
+.cartDeleteProduct:hover {
+  background-color: #8C5C4A;
 }
 
 .cartItem:hover .cartItemDelete {

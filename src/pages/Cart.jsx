@@ -1,7 +1,7 @@
-import React, { useState } from "react"; 
-import { MdDelete } from "react-icons/md"; 
-import { useCartContext } from "../state/Cart.context";
+import React, { useState } from "react";  
+import { useCartContext, updateManyWood } from "../state/Cart.context";
 import { addOrder } from "../lib/orders.requests";
+
 
 export const Cart = () => {
   const [name, setName] = useState("");
@@ -26,6 +26,8 @@ export const Cart = () => {
       total: precioTotal,
     }
     const id = await addOrder(order);
+
+    await updateManyWood(items);
     console.log(id);
 
     limpiarCarrito();
@@ -81,9 +83,14 @@ export const Cart = () => {
                       maximumFractionDigits: 2,
                     })}
                   </span>
-                  <button className="cartItemDelete" onClick={() => eliminarProduct(item.id)}>
+                  <div>
+                    <button className="cartDeleteProduct" key={item.id} onClick={() => eliminarProduct(item.id)}>
+                      Eliminar
+                    </button>
+                  </div>
+                 {/*  <button className="cartItemDelete" onClick={() => eliminarProduct(item.id)}>
                     < MdDelete />
-                  </button>
+                  </button> */}
                 </div>
               ))}
             </div>
