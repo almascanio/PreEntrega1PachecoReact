@@ -18,10 +18,10 @@ export const Home = () => {
 if (isLoading) return < Loader/>
 
 return(
-    <div className="container-home">
+    <div>
         { isLoading && < Loader/> }
-        <p className="container-p">LO NUEVO EN ¡A TODO MADERA!</p>
-        <div className="container-produc">
+        <p className="homeTitle">LO NUEVO EN ¡A TODO MADERA!</p>
+        <div>
             <ItemListContainer products={products}/>
         </div>
     </div>

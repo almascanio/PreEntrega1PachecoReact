@@ -1,16 +1,22 @@
-.item-count{
+.itemCount{
     width: fit-content;
-    background-color: #deb887;
     margin: auto;
-    padding: 16px;
-    text-align: center;
-    border-radius: 20px;
+    padding: 15px;
 }
 
-.item-count-btn{
-    background-color: #ffdcaf;
-    margin: 2px;
-    padding: 8px;
-    font-size: 20px;
+.itemCountBtn{
+    background-color: #BF9D8A;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
     font-weight: bolder;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.itemCountBtn:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }

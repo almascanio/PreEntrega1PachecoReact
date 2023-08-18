@@ -25,7 +25,7 @@ export const CartProvider = ({children}) => {
                     setCart(nuevoCarrito);
     };   
 
-    // Eliminar del carrito (Debo hacer el detalle del carrito para poder eliminar con el boton)
+    // Eliminar del carrito (Debo hacer el detalle del carrito para poder eliminar con el icono)
     const eliminarProduct = (id) => {
         const nuevoCarrito = cart.filter((product) => product.id !== id);
         setCart(nuevoCarrito);

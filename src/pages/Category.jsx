@@ -15,9 +15,9 @@ import { ItemListContainer } from "../components/ItemListContainer/ItemListConta
     }, [id]);
     
     return(
-        <div className="container-home">
-            <p className="container-p">LO NUEVO EN ¡A TODO MADERA!</p>
-            <div className="container-produc">
+        <div>
+            <p className="homeTitle">LO NUEVO EN ¡A TODO MADERA!</p>
+            <div>
                 <ItemListContainer products={products}/>
             </div>
         </div>

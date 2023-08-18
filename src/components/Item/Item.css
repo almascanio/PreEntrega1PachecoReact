@@ -1,31 +1,58 @@
-.container-card{
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
     margin: 20px;
     padding: 20px;
-    background-color: rgb(250, 255, 255);
+    background-color: #bf9d8ac4;
     width: 300px;
-    height: 400px;
+    height: auto;
     border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.5s;
 }
 
-.img{
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+img {
     width: 250px;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
 }
 
-.container-info, .container-vm{
+.itemCard, .itemBtn {
     margin-top: 10px;
+    padding: 0 5px;
 }
 
-.container-title{
-    font-size: 25px;
-    font-weight: bolder;
+.itemTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #261D19;
 }
 
-.container-btn{
-    background-color: antiquewhite;
-    color: black;
+.itemPrice {
+    font-size: 18px;
+    color: #2e2e2e;
+}
+
+.itemVerMas {
+    background-color: #59362E;
+    color: white;
     border-radius: 10px;
     font-size: 14px;
     font-weight: 500;
+    height: 30px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.itemVerMas:hover {
+    background-color: #8C5C4A;
 }

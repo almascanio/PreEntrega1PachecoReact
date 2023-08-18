@@ -11,18 +11,22 @@ export const Item = ({
 }) => {
     const navigate = useNavigate();
     return(
-        <div className="container-card" onClick={() => navigate(`/item/${id}`)}>
-            <div className="container-img">
-                <img className="img" src={img} />
+        <div className="item" onClick={() => navigate(`/item/${id}`)}>
+            <div>
+                <img src={img} />
             </div>
-            <div className="container-info">
-                <span className="container-title">{title}</span>
+            <div className="itemCard">
+                <span className="itemTitle">{title}</span>
                 <br />
-               {/*  <p className="container-description">{description}</p> */}
-                <span className="container-price">${price}</span>
+                <span className="itemPrice">${price}</span>
+                $
+                {price.toLocaleString("es-AR", {
+                    minimumFractionDigits: 2,
+                    maximumFractionDigits: 2,
+                })}
             </div>
-            <div className="container-vm">
-                <button className="container-btn">Ver mas</button>
+            <div className="itemBtn">
+                <button className="itemVerMas">Ver mas</button>
             </div>
         </div>
     )

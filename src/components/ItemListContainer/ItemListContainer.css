@@ -1,8 +1,11 @@
-.item-list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: 400px;
-    gap: 200px;
-    padding: 40px;
-    text-align: center;
+.itemListContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.itemList{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }

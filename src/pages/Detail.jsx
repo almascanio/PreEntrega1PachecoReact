@@ -23,17 +23,17 @@ const handleAdd = (cantidad) => {
 if(!Object.keys(wood).length) return < Loader />
 
 return (
-    <div className="container-detail">
-        <div className="container-detail-todo">
-            <div>
-                <img className="img-detail" src={wood.img}/>
+    <div className="detailContainer">
+        <div className="detail">
+            <div className="detailImg">
+                <img className="detailImgImg" src={wood.img}/>
             </div>
-            <div>
-                <span className="container-title-di">{wood.title}</span>
-                <p className="container-parrafo-di">{wood.description}</p>
-                <span className="container-price-di">${wood.price}</span>
+            <div className="detailTodo">
+                <span className="detailTitle">{wood.title}</span>
+                <p className="detailDescription">{wood.description}</p>
+                <span className="detailPrice">${wood.price}</span>
                 <br />
-                <span className="container-mensaje"> Quedan solo  {wood.stock} unidades</span>
+                <span className="detailMensaje"> Quedan solo {wood.stock} unidades</span>
                 <ItemCount initial={1} stock={wood.stock - (stockCarrito?.(id)?.cantidad || 0)} onAdd={handleAdd}/>
             </div>
         </div>
