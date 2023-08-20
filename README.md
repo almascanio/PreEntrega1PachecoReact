@@ -23,12 +23,12 @@
    "Transforma tu hogar con elegancia: Escritorios, placares y sillas de madera que marcan la diferencia."
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explorar sitio web»</strong></a>
+    <a href="proyectofinalreact-ecommerce.vercel.app"><strong>Explorar sitio web»</strong></a>
 </div>
 
 ## Vision del Proyecto:
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](proyectofinalreact-ecommerce.vercel.app)
 
 El objetivo principal es ofrecer de una manera conveniente y accesible a muebles de alta calidad que aporten calidez y estilo a tus ambientes. Nuestra visión es proporcionar una plataforma en línea donde puedas descubrir y adquirir piezas de diseño únicos que se adapten a tus necesidades y gustos, todo ello sin comprometer la calidad ni la artesanía.
 
@@ -123,7 +123,7 @@ Esperamos que encuentres nuestra tienda en línea de muebles de madera como una 
 [license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt -->
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/almary-pacheco/
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: ./public/img/HomeATodoMadera.png
 [html]:https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
