@@ -1,4 +1,4 @@
-import { collection, getDocs, where, getDoc, query, doc, writeBatch, increment} from "firebase/firestore";
+import { collection, getDocs, where, getDoc, query, doc, writeBatch, increment } from "firebase/firestore";
 import { al } from "./config";
 
 const woodReferencia = collection(al, "items");

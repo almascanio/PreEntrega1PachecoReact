@@ -251,8 +251,7 @@ svg {
   }
 }
 
-
-/* Formulario del carrito */
+/* Formulario de la compra */
 
 .form {
   display: flex;
@@ -274,17 +273,21 @@ svg {
   width: 100%;
   padding: 12px;
   border: 1px solid #d1d1d1;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 16px;
   color: white;
   background-color: #BF9D8A;
-  transition: border-color 0.3s ease, transform 0.3s ease; /* Agregar transición de transformación */
+  transition: border-color 0.3s ease, transform 0.3s ease;
   transform: translateY(0); 
 }
 
 .form input.formInput:focus {
   border-color: #8C5C4A;
   transform: translateX(6px);
+}
+
+.formInput::placeholder{
+  color: rgba(255, 255, 255, 0.784);
 }
 
 .formButton {
@@ -303,4 +306,10 @@ svg {
 
 .formButton:hover {
   background-color: #8C5C4A;
+}
+
+.errorText{
+  color: red; 
+  font-size: 14px; 
+  padding: 5px;
 }

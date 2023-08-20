@@ -4,14 +4,9 @@ import "./NavBar.css";
 
 export const NavBar = () => {
     return ( <>
-        <header className="container">
+        <header className="containerHeader">
             <NavLink to="/"> 
-                <h1 style={{
-                    fontSize: 30,
-                    color: "#261D19",
-                    textDecoration: "none",
-                    fontWeight: "bolder"
-                }}>A TODO MADERA</h1>
+                <img className="logo" src="img/logo.png" alt="" />
             </NavLink>
             <nav className="nav_items">
                 <NavLink 
